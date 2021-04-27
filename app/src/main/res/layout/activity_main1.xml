@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/download123" />
+
+                <TextView
+                    android:id="@+id/orgId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_vertical"
+                    android:layout_margin="16dp"
+                    android:gravity="center"
+                    android:text="Joint Entrance Examination (Main) -2020"
+                    android:textColor="#000" />
+            </LinearLayout>
+
+
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#E1DFE1"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/subject"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:gravity="center_horizontal"
+                        android:text="Paper-1 (B.Tech): NTA Score#"
+                        android:textColor="#000"
+                        android:textSize="12sp" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="1dp"
+                android:background="#F8F4F9">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="12">
+
+                    <TextView
+                        android:id="@+id/certificate_number_label"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="4"
+                        android:gravity="left"
+                        android:text="Sessions"
+                        android:textColor="#000"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/certificate_number_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:text="Physics"
+                        android:textColor="#000"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/certificate_number_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:text="Chemistry"
+                        android:textColor="#000"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/certificate_number_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:text="Mathematics"
+                        android:textColor="#000"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/certificate_number_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:text="Total"
+                        android:textColor="#000"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="12">
+
+                    <TextView
+                        android:id="@+id/certificate_number_label"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="4"
+                        android:gravity="left"
+                        android:text="January2020 Session"
+                        android:textColor="#000"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/certificate_number_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:text="90.9726571"
+                        android:textColor="#000"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/certificate_number_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:text="94.3699993"
+                        android:textColor="#000"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/certificate_number_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:text="79.9457316"
+                        android:textColor="#000"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/certificate_number_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:text="92.0169763"
+                        android:textColor="#000"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+
+
+            </TableLayout>
+
+            <include
+                layout="@layout/exa"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
