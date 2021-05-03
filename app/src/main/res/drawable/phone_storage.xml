@@ -1,0 +1,24 @@
+<item
+    android:drawable="?android:colorBackground">
+</item>
+
+<item android:gravity="center"
+android:drawable="?android:colorBackground">
+<shape
+    android:shape="rectangle">
+    <solid
+        android:color="@color/colorPrimaryDark"/>
+</shape>
+</item>
+
+<item android:bottom="400dp"
+android:left="-120dp"
+android:right="-120dp"
+android:top="-400dp">
+<shape
+    android:shape="oval">
+    <solid
+        android:color="@color/colorPrimary"/>
+</shape>
+
+</item>

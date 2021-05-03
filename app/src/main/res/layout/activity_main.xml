@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <!-- Header Part -->
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:id="@+id/header"
+                android:background="#078906"
+                android:paddingBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_marginTop="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    >
+                    <LinearLayout
+                        android:id="@+id/internal_storage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ic_baseline_storage_24"
+                            ></ImageView>
+                        <RelativeLayout
+                            android:layout_width="320dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Internal Storage"
+                                android:textStyle="bold"
+                                ></TextView>
+                            <TextView
+                                android:id="@+id/storage_in_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="10/32 GB"
+                                android:layout_alignEnd="@id/progress_storage"
+                                ></TextView>
+                            <com.google.android.material.progressindicator.LinearProgressIndicator
+                                android:id="@+id/progress_storage"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="300dp"
+                                android:layout_height="40dp"
+                                android:layout_below="@id/storage_in_number"
+                                >
+
+                            </com.google.android.material.progressindicator.LinearProgressIndicator>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    />
+                <RelativeLayout
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/sd_storage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:baselineAligned="false"
+                            android:src="@drawable/ic_baseline_sd_storage_24"></ImageView>
+
+                        <RelativeLayout
+                            android:layout_width="320dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="SD Storage"
+                                android:textStyle="bold"></TextView>
+
+                            <TextView
+                                android:id="@+id/storage_in_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignEnd="@id/progress_storage"
+                                android:text="10/32 GB"></TextView>
+
+                            <com.google.android.material.progressindicator.LinearProgressIndicator
+                                android:id="@+id/progress_storage"
+                                android:layout_width="300dp"
+                                android:layout_height="40dp"
+                                android:layout_below="@id/storage_in_number"
+                                android:layout_marginTop="10dp">
+
+                            </com.google.android.material.progressindicator.LinearProgressIndicator>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+            <Space
+                android:id="@+id/space"
+                android:layout_below="@id/header"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                />
+            <LinearLayout
+
+                android:layout_below="@id/space"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/google_drive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/google_drive"
+                        ></ImageView>
+                    <RelativeLayout
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Google drive"
+                            android:textStyle="bold"
+                            ></TextView>
+                        <TextView
+                            android:id="@+id/storage_in_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10/32 GB"
+                            android:layout_alignEnd="@id/progress_storage"
+                            ></TextView>
+                        <com.google.android.material.progressindicator.LinearProgressIndicator
+                            android:id="@+id/progress_storage"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="300dp"
+                            android:layout_height="40dp"
+                            android:layout_below="@id/storage_in_number"
+                            >
+
+                        </com.google.android.material.progressindicator.LinearProgressIndicator>
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/drive_storage2"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/one_drive"
+                        ></ImageView>
+                    <RelativeLayout
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Microsoft One Drive"
+                            android:textStyle="bold"
+                            ></TextView>
+                        <TextView
+                            android:id="@+id/storage_in_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10/32 GB"
+                            android:layout_alignEnd="@id/progress_storage"
+                            ></TextView>
+                        <com.google.android.material.progressindicator.LinearProgressIndicator
+                            android:id="@+id/progress_storage"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="300dp"
+                            android:layout_height="40dp"
+                            android:layout_below="@id/storage_in_number"
+                            >
+
+                        </com.google.android.material.progressindicator.LinearProgressIndicator>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_add_24"
+
+                android:layout_marginRight="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="50dp"
+                >
+
+            </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        </RelativeLayout>
+
+</LinearLayout>
